@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
+     font-family: 'Ropa Sans', sans-serif;
+}
+
+html {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     min-height: 100vh;
+     letter-spacing: 2px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #6d695c;
+     background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 60px),
+          repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 60px),
+          linear-gradient(60deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)),
+          linear-gradient(120deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
+     background-size: 70px 120px;
+}
+
+#container {
+     width: 500px;
+     height: 700px;
+     background: #efefef;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 3px;
+     box-shadow: 0 5px 30px 10px rgb(0 0 0 / 40%);
+}
+
+#container h1 {
+     text-transform: uppercase;
+     font-size: 40px;
+}
+
+#container form {
+     width: 90%;
+}
+
+#container .form-group {
+     height: 65px;
+     padding-bottom: 10px;
+}
+
+#container label {
+     position: relative;
+     bottom: 3px;
+     font-size: 20px;
+}
+
+#container input {
+     width: 100%;
+     height: 40px;
+     padding: 8px;
+     border: 1.5px solid #000;
+     border-radius: 3px;
+     outline: none;
+     box-sizing: border-box;
+     font-size: 18px;
+     transition: all 0.3s;
+}
+
+#container input::placeholder {
+     color: rgb(133, 133, 133);
+}
+
+#container input:valid {
+     border: 2px solid #30d602;
+}
+
+#container input:invalid {
+     border: 2px solid #fc0303;
+}
+
+#container button {
+     cursor: pointer;
+     color: #efefef;
+     background: rgb(19, 18, 18);
+     border: none;
+     border-radius: 3px;
+     height: 50px;
+     width: 100%;
+     font-size: 25px;
+     margin-top: 5px;
+     transition: all 0.3s ease-in-out;
+}
+
+#container button:hover {
+     background: rgb(51, 49, 49);
+}
+
+#container button:focus {
+     outline: none;
+}
+
+#container .message-container {
+     border-radius: 3px;
+     width: 90%;
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     color: rgb(19, 18, 18);
+}
+
+#container .message-container h3 {
+     font-size: 24px;
+     margin-top: 2px;
+}
